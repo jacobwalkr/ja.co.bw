@@ -1,11 +1,150 @@
-img.headshot {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
+// Variables
+
+// Fonts
+$serif: 400 16px/1.3 'PT Serif', serif;
+$sans-serif: 300 18px/1.3 'Lato', sans-serif;
+$light: 300;
+$normal: 400;
+$bold: 700;
+
+// Colours
+//$brand-blue: rgb(17, 41, 63);
+$brand-blue: #122f4a;
+
+// Other sizes
+$page-width: 600px;
+
+// Uses Chris Coyier's box-sizing trick
+html {
+    box-sizing: border-box;
+    background-color: $brand-blue;
+
+    a {
+        color: $brand-blue;
+        font-weight: $normal;
+    }
 }
 
-div.headshot-placeholder {
-    width: 175px;
-    height: 175px;
-    background-color: #fcfccc;
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: $page-width;
+    font: $sans-serif;
+    font-size: 18px;
+    border-radius: 3px;
+    width: 100%;
+    margin: 0;
+
+    @media (min-width: 600px) {
+        width: 600px;
+        position: absolute;
+        left: 50%;
+        margin-left: -300px;
+    }
+
+    @media (min-height: 553px) and (min-width: 600px) {
+        top: 50%;
+        margin-top: -276px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: $serif;
+    margin-bottom: 5px;
+}
+
+header, main, footer {
+    background-color: white;
+
+    @media (max-width: $page-width) {
+        width: 100%;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 40px 40px 10px 40px;
+
+    h1 {
+        margin-bottom: -9px;
+        color: $brand-blue;
+        font-weight: $bold;
+        margin-top: 25px;
+        font-size: 48px;
+    }
+
+    img.headshot {
+        display: block;
+        height: 175px;
+        width: 175px;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+}
+
+main {
+    padding: 15px;
+    border-radius: 0 0 3px 3px;
+
+    p, nav {
+        margin: 15px 10px;
+
+        p {
+            margin: 15px 0;
+        }
+
+        &.bio, &.contact {
+            $font: $serif;
+            font-size: 18px;
+            line-height: 1.7;
+
+            &.name {
+                font-size: 24px;
+            }
+
+            &.handle {
+                margin-top: 0;
+            }
+
+            strong {
+                font-weight: $normal;
+
+                &.uni {
+                    color: #e4ad00; // gold
+                }
+
+                &.cern {
+                    color: #0053a1; // cern blue
+                }
+
+                &.coffee {
+                    color: #662c09; // just some brown
+                }
+            }
+
+            span.light {
+                color: #666666;
+            }
+        }
+
+        a {
+            &.twitter {
+                color: #55acee; // twitter blue
+            }
+
+            &.gitlab {
+                color: #443366; // gitlab's default purple
+            }
+
+            &.github {
+                color: #333333; // the darkest brand grey for github
+            }
+
+            &.flickr {
+                color: #ff0084; // flickr pink
+            }
+        }
+    }
 }
