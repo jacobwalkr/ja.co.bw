@@ -36,17 +36,18 @@ body {
     border-radius: 3px;
     width: 100%;
     margin: 0;
+    background-color: white;
 
     @media (min-width: 600px) {
         width: 600px;
         position: absolute;
         left: 50%;
-        margin-left: -300px;
+        transform: translateX(-50%);
     }
 
     @media (min-height: 553px) and (min-width: 600px) {
         top: 50%;
-        margin-top: -276px;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -56,8 +57,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header, main, footer {
-    background-color: white;
-
     @media (max-width: $page-width) {
         width: 100%;
     }
