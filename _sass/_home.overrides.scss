@@ -1,0 +1,23 @@
+$home-bp: $home-width + $body-margin * 2;
+
+body.home {
+    max-width: $home-width;
+
+    @media (min-width: $home-bp) {
+        margin: 0;
+        width: $home-width;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @media (max-height: $home-bp - 1) {
+        margin-top: $body-margin;
+    }
+
+    @media (min-height: $home-bp) and (min-width: $home-bp) {
+        margin-left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

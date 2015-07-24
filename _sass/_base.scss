@@ -14,26 +14,13 @@ html {
 }
 
 body {
-    max-width: $home-width;
     font: $sans-serif;
     font-size: 18px;
+    width: initial;
     height: initial;
     border-radius: 3px;
-    margin: 20px;
+    margin: $body-margin;
     background-color: white;
-
-    @media (min-width: $home-width) {
-        margin: 0;
-        width: 600px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    @media (min-height: $home-width) and (min-width: $home-width) {
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
 }
 
 h1, h2, h3, h4, h5, h6 {

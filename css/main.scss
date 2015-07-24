@@ -17,12 +17,14 @@ $brand-blue: #122f4a;
 // Other sizes
 $home-width: 600px;
 $post-width: 900px;
+$body-margin: 20px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "normalize",
-        "foundation.min",
+        //"foundation.min",
         "base",
+        "home.overrides",
         "post.overrides",
         "syntax-highlighting"
 ;

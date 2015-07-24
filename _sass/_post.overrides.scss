@@ -1,0 +1,10 @@
+$post-bp: $post-width + $body-margin * 2;
+
+body.post {
+    max-width: $post-width;
+
+    @media (min-width: $post-bp) {
+        margin: 50px auto;
+        border-radius: 3px;
+    }
+}
