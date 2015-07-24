@@ -12,3 +12,12 @@ markdown: kramdown
 
 sass:
     style: :compressed
+
+defaults:
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            permalink: "/posts/:title"
+            is_post: true # flag for posts - used in layout
