@@ -8,7 +8,15 @@
     {% else %}
         <body>
     {% endif %}
-        {% include header.html %}
+
+        <header class="cf">
+            <img class="headshot" src="http://www.gravatar.com/avatar/5c056e7677c157248af7f91a2c118a7d.jpg?s=175" />
+            {% if page.is_home %}
+                {% include header_home.html %}
+            {% else %}
+                {% include header.html %}
+            {% endif %}
+        </header>
 
         <main>
             {{ content }}
