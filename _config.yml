@@ -1,10 +1,9 @@
 # Site settings
 title: jacob
 email: jacob.walker94@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Jacob Walker's smashing homepage and equally smashing blog
+description: Jacob Walker's smashing homepage and equally smashing blog
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://ja.co.bw" # the base hostname & protocol for your site
 twitter_username: jacobwalkr
 github_username:  jacobwalkr
 
