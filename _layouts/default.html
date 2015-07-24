@@ -1,7 +1,13 @@
 <html>
     {% include head.html %}
 
-    <body>
+    {% if page.is_home %}
+        <body class="home">
+    {% elsif page.is_post %}
+        <body class="post">
+    {% else %}
+        <body>
+    {% endif %}
         {% include header.html %}
 
         <main>
