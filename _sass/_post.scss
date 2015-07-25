@@ -1,6 +1,6 @@
 $post-bp: $post-width + $body-margin * 2;
 
-body.post {
+html.post > body {
     max-width: $post-width;
 
     & > header {

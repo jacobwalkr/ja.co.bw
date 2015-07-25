@@ -1,6 +1,6 @@
 $home-bp: $home-width + $body-margin * 2;
 
-body.home {
+html.home > body {
     max-width: $home-width;
 
     @media (min-width: $home-bp) {
