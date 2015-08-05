@@ -1,7 +1,7 @@
 // Uses Chris Coyier's box-sizing trick
 html {
     box-sizing: border-box;
-    background-color: $brand-blue;
+    background: url('/images/blue_noise.png') repeat $brand-blue;
 
     a {
         color: $brand-blue;
