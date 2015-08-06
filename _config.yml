@@ -1,7 +1,7 @@
 # Site settings
 title: jacob
 email: jacob.walker94@gmail.com
-description: Jacob Walker's smashing homepage and equally smashing blog
+description: Just another homepage
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ja.co.bw" # the base hostname & protocol for your site
 twitter_username: jacobwalkr
