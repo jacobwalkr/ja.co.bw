@@ -8,6 +8,7 @@ html.home > body {
         width: $home-width;
         position: absolute;
         left: 50%;
+	-webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
 
@@ -18,6 +19,7 @@ html.home > body {
     @media (min-height: $home-bp) and (min-width: $home-bp) {
         margin-left: 0;
         top: 50%;
+	-webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 }
