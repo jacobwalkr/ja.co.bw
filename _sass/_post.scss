@@ -1,37 +1,30 @@
 $post-bp: $post-width + $body-margin * 2;
 
-html.post > body {
-    max-width: $post-width;
+html.post {
+    background: white;
 
-    & > header {
-        h1 {
-            margin-bottom: 0.6em;
-        }
-    }
+    & > body {
+        max-width: $post-width;
 
-    @media (min-width: $post-bp) {
-        margin: 50px auto;
-        border-radius: 3px;
-    }
-
-    @media (min-width: 700px) {
-        & > header {
-            padding: 30px;
-
-            img.headshot {
-                float: left;
-            }
-
+        header {
             h1 {
-                float: right;
-                margin-top: 1em;
+                margin-bottom: 0.6em;
+
+                &.post-title {
+                    margin-top: 0;
+                }
+            }
+
+            &.post-header {
+                padding-top: 0;
             }
         }
-    }
-}
 
-header.post-header {
-    padding: 0;
-    text-align: center;
-    margin-bottom: 40px;
+        @media (min-width: $post-bp) {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            border-radius: 3px;
+            width: $post-width;
+        }
+    }
 }

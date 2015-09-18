@@ -2,6 +2,7 @@
 html {
     box-sizing: border-box;
     background: url('/images/blue_noise.png') repeat $brand-blue;
+    min-width: 320px;
 
     a {
         color: $brand-blue;
