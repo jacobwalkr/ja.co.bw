@@ -19,5 +19,5 @@ defaults:
             path: ""
             type: "posts"
         values:
-            permalink: "/posts/:title"
+            permalink: date
             is_post: true # flag for posts - used in layout
